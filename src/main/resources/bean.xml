@@ -12,6 +12,10 @@
 
     <bean id="alien" class="org.gayatri.Alien">
         <property name="age" value="21"></property>
+        <property name="laptop" ref="lap"></property>
+    </bean>
+
+    <bean id="lap" class="org.gayatri.Laptop">
     </bean>
 
     <bean id="lap" class="org.gayatri.Laptop">
