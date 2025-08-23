@@ -5,11 +5,14 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions here -->
-    <bean id="alien" class="org.gayatri.Alien" scope="prototype">
-    </bean>
 
-<!--    <bean id="alien1" class="org.gayatri.Alien">-->
+    <!--    about prototype      -->
+<!--    <bean id="alien" class="org.gayatri.Alien" scope="prototype">-->
 <!--    </bean>-->
+
+    <bean id="alien" class="org.gayatri.Alien">
+        <property name="age" value="21"></property>
+    </bean>
 
     <bean id="lap" class="org.gayatri.Laptop">
     </bean>

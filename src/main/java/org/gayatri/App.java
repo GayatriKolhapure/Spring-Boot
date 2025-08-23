@@ -9,9 +9,10 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
-//        Alien alien1 = (Alien)context.getBean("alien"); //get bean given type of the object so need typecast
-//        alien1.age = 21;
-//        alien1.code();
+        Alien alien1 = (Alien)context.getBean("alien"); //get bean given type of the object so need typecast
+//        alien1.setAge(21);
+        System.out.println(alien1.getAge());
+        alien1.code();
 //
 //        System.out.println(alien1.age);
 //
