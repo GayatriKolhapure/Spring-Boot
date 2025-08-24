@@ -7,10 +7,10 @@ public class Alien {
     private int age;
     private Computer com;
 
-    public Alien(){
-        System.out.println("Object created for Alien");
-    }
-//    @ConstructorProperties({"age", "lap"})
+//    public Alien(){
+//        System.out.println("Object created for Alien");
+//    }
+//   @ConstructorProperties({"age", "lap"})
 //    public Alien(int age, Computer com) {
 //        System.out.println("Para constructor called");
 //        this.age = age;
@@ -22,7 +22,7 @@ public class Alien {
     }
 
     public void setAge(int age) {
-        System.out.println("Setter called");
+//        System.out.println("Setter called");
         this.age = age;
     }
 

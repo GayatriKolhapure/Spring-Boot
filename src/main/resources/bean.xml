@@ -6,17 +6,20 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions here -->
 
-    <bean id="alien" class="org.gayatri.Alien">
+    <bean id="alien" class="org.gayatri.Alien" autowire="byType">
 
-        <constructor-arg ref="lap1" name="lap"/>
-        <constructor-arg value="21" name="age"/>
+<!--        <constructor-arg ref="lap1" name="lap"/>-->
+<!--        <constructor-arg value="21" name="age"/>-->
+
+        <property name="age" value="21"></property>
+<!--        <property name="com" ref="com1"></property>-->
 
     </bean>
 
-    <bean id="lap" class="org.gayatri.Laptop">
+    <bean id="com1" class="org.gayatri.Laptop">
     </bean>
 
-    <bean id="lap1" class="org.gayatri.Laptop">
+    <bean id="com" class="org.gayatri.Desktop">
     </bean>
 
 
