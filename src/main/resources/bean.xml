@@ -12,14 +12,14 @@
 <!--        <constructor-arg value="21" name="age"/>-->
 
         <property name="age" value="21"></property>
-<!--        <property name="com" ref="com1"></property>-->
+        <property name="com" ref="com1"></property>
 
     </bean>
 
-    <bean id="com1" class="org.gayatri.Laptop">
+    <bean id="com" class="org.gayatri.Laptop" primary="true">
     </bean>
 
-    <bean id="com" class="org.gayatri.Desktop">
+    <bean id="com1" class="org.gayatri.Desktop">
     </bean>
 
 
