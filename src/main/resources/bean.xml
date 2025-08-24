@@ -12,15 +12,18 @@
 <!--        <constructor-arg value="21" name="age"/>-->
 
         <property name="age" value="21"></property>
-        <property name="com" ref="com1"></property>
+        <property name="com">
+            <bean id="com1" class="org.gayatri.Laptop" primary="true">
+            </bean>
+            </property>
 
-    </bean>
+        </bean>
 
-    <bean id="com1" class="org.gayatri.Laptop" primary="true">
-    </bean>
+    <!--    <bean id="com1" class="org.gayatri.Laptop" primary="true">-->
+<!--    </bean>-->
 
-    <bean id="com2" class="org.gayatri.Desktop"  lazy-init="true">
-    </bean>
+<!--    <bean class="org.gayatri.Desktop"  lazy-init="true">-->
+<!--    </bean>-->
 
 
 </beans>
