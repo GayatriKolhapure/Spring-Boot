@@ -1,11 +1,28 @@
 package org.gayatri;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
 import java.beans.ConstructorProperties;
 
+@Component
 public class Alien {
 
+    @Value("21")//inject this value outside the code
     private int age;
+
+
+//    three types of injection field injection, setter injection, constructor injection
+    ///  always prefer to write @Autowired on top of setter
+
+
+//    @Autowired
+//    @Qualifier("laptop")
     private Computer com;
+
 
     public Alien(){
         System.out.println("Object created for Alien");
@@ -30,6 +47,9 @@ public class Alien {
         return com;
     }
 
+
+    @Autowired
+    @Qualifier("laptop")
     public void setCom(Computer com) {
         this.com = com;
     }
