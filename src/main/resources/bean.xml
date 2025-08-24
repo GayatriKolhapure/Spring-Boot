@@ -6,32 +6,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions here -->
 
-    <!--    about prototype      -->
-<!--    <bean id="alien" class="org.gayatri.Alien" scope="prototype">-->
-<!--    </bean>-->
-
     <bean id="alien" class="org.gayatri.Alien">
-<!--        <constructor-arg ref="lap1" type="Laptop" />-->
-<!--        <constructor-arg value="21" type="int"/>-->
-
-<!--                <constructor-arg ref="lap1" type="Laptop" index="1" />-->
-<!--                <constructor-arg value="21" type="int" index="0"/>-->
-
-<!--        <constructor-arg ref="lap1" type="Laptop" index="1" name="lap" />-->
-<!--        <constructor-arg value="21" type="int" index="0" name="age"/>-->
-
 
         <constructor-arg ref="lap1" name="lap"/>
         <constructor-arg value="21" name="age"/>
 
-
-
-
-        <!--        <constructor-arg ref="lap1" />-->
-
-
-<!--        <property name="age" value="21"/> -->
-<!--           <property name="laptop" ref="lap"/>-->
     </bean>
 
     <bean id="lap" class="org.gayatri.Laptop">
@@ -40,6 +19,5 @@
     <bean id="lap1" class="org.gayatri.Laptop">
     </bean>
 
-<!--scopes =    singleton prototype || request session-->
 
 </beans>

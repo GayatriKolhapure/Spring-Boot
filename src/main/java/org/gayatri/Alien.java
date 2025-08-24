@@ -1,22 +1,21 @@
 package org.gayatri;
 
-
 import java.beans.ConstructorProperties;
 
 public class Alien {
 
     private int age;
-    private Laptop laptop;
+    private Computer com;
 
     public Alien(){
         System.out.println("Object created for Alien");
     }
-    @ConstructorProperties({"age", "lap"})
-    public Alien(int age, Laptop laptop) {
-        System.out.println("Para constructor called");
-        this.age = age;
-        this.laptop = laptop;
-    }
+//    @ConstructorProperties({"age", "lap"})
+//    public Alien(int age, Computer com) {
+//        System.out.println("Para constructor called");
+//        this.age = age;
+//        this.laptop = laptop;
+//    }
 
     public int getAge() {
         return age;
@@ -27,16 +26,16 @@ public class Alien {
         this.age = age;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setCom(Computer com) {
+        this.com = com;
     }
 
     public void code(){
         System.out.println("Coding........");
-        laptop.compile();
+        com.compile();
     }
 }

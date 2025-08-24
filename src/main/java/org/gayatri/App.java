@@ -13,11 +13,6 @@ public class App
 //        alien1.setAge(21);
         System.out.println(alien1.getAge());
         alien1.code();
-//
-//        System.out.println(alien1.age);
-//
-//        Alien alien = (Alien)context.getBean("alien");   //get bean given type of the object so need typecast
-////        alien.code();
-//        System.out.println(alien.age);
+
     }
 }
