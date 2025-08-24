@@ -16,10 +16,10 @@
 
     </bean>
 
-    <bean id="com" class="org.gayatri.Laptop" primary="true">
+    <bean id="com1" class="org.gayatri.Laptop" primary="true">
     </bean>
 
-    <bean id="com1" class="org.gayatri.Desktop">
+    <bean id="com2" class="org.gayatri.Desktop"  lazy-init="true">
     </bean>
 
 

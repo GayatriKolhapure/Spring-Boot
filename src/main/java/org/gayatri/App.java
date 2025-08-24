@@ -14,5 +14,9 @@ public class App
         System.out.println(alien1.getAge());
         alien1.code();
 
+//        Alien alien2 = (Alien)context.getBean("alien1");
+
+         Desktop desktop = (Desktop)context.getBean("com2");
+
     }
 }

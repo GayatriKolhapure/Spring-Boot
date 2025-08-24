@@ -7,9 +7,9 @@ public class Alien {
     private int age;
     private Computer com;
 
-//    public Alien(){
-//        System.out.println("Object created for Alien");
-//    }
+    public Alien(){
+        System.out.println("Object created for Alien");
+    }
 //   @ConstructorProperties({"age", "lap"})
 //    public Alien(int age, Computer com) {
 //        System.out.println("Para constructor called");

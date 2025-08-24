@@ -1,9 +1,9 @@
 package org.gayatri;
 
 public class Laptop implements Computer {
-//    public Laptop(){
-//        System.out.println("Laptop Object Constructor");
-//    }
+    public Laptop(){
+        System.out.println("Laptop Object Created....");
+    }
 
     @Override
     public void compile(){
